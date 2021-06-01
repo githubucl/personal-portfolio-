@@ -76,7 +76,7 @@ I leveraged my undergraduate First Class Honor degree into <span>London School o
         But what do all of these have to do with Front-End development
       </div>
     </div>
-    <div style={{ height: "100vh" }}>
+    <div style={{ height: "80vh" }}>
       <div className="dot">
 
       </div>
