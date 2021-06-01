@@ -1,13 +1,17 @@
 import React, { Suspense, useRef } from "react"
 import { Canvas } from "@react-three/fiber"
-import { Environment } from "@react-three/drei"
+import { Environment, Loader } from "@react-three/drei"
 import Model from "./Model"
 import Overlay from "./Overlay"
+
 
 export default function App() {
   const overlay = useRef()
   const caption = useRef()
   const scroll = useRef(0)
+
+
+
   return (
     <>
       <Canvas
@@ -21,6 +25,7 @@ export default function App() {
           <Environment preset="city" />
         </Suspense>
       </Canvas>
+      <Loader />
       <Overlay ref={overlay} caption={caption} scroll={scroll} />
     </>
   )
