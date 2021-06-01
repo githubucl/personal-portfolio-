@@ -78,12 +78,14 @@ body {
   max-width: 600px;
   padding: 0;
   padding: 80px;
-  color: #878787;
+  color: #e4e4e4;
   line-height: 1.6em;
   font-size: 20px;
   letter-spacing: 1.5px;
 }
-
+.gold{
+  color: white;
+}
 .dot > h1 {
   -webkit-font-smoothing: auto;
   pointer-events: none;

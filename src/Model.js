@@ -30,12 +30,16 @@ export default function Model({ scroll, raycaster, ...props }) {
     }
     useFrame((state) => {
         t.current = THREE.MathUtils.lerp(t.current, actions["CameraAction.018"]._clip.duration * scroll.current, 0.05)
-        if (t.current >= 19.83) {
-            mixer.setTime(19.83)
-        } else {
+        if (t.current >= 20.958) {
+            mixer.setTime(20.958)
+        }
+        else if (t.current <= 0) {
+            mixer.setTime(0)
+        }
+        else {
             mixer.setTime(t.current)
         }
-
+        // console.log(t.current);
 
         group.current.children[0].children.forEach((child, index) => {
             // child.material.color.lerp(color.set(hovered === child.name ? "tomato" : "#202020").convertSRGBToLinear(), hovered ? 0.1 : 0.05)

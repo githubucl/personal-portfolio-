@@ -31,7 +31,7 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
 
       </div>
     </div>
-    <div style={{ height: "150vh" }}>
+    <div style={{ height: "200vh" }}>
       <div className="dot">
         <h1>Doctor</h1>
         <br /><br />
@@ -43,7 +43,7 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
        However, it did not take too many lab rats to make me realised that being a doctor might not be an option for me due to my hemophobia
       </div>
     </div>
-    <div style={{ height: "250vh" }}>
+    <div style={{ height: "200vh" }}>
       <div className="dot">
         <h1>Biochemical Engineering</h1>
         <br /><br />
@@ -54,7 +54,7 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
       </div>
     </div>
     <div style={{ height: "200vh" }}>
-      <div className="dot">
+      <div className="dot gold">
         <h1>Private Equity</h1>
         <br /><br />
     Most of my London hall mates come from Finance background. Under the influence, I started to be interested in investing. In summer 2019, I got an internship opportunity at a private equity firm as an <span>analyst</span>
