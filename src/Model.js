@@ -73,9 +73,9 @@ export default function Model({ scroll, raycaster, ...props }) {
             </group>
             <group
                 name="drug"
-                position={[7.2669, 2.3149, 8.4611]}
+                position={[0.8278, 2.946, 9.2494]}
                 rotation={[-1.8758, 0.0508, -0.1994]}
-                scale={[-0.6485, 0.3262, -0.6485]}>
+                scale={[-0.489, 0.246, -0.489]}>
                 <mesh geometry={nodes.coin220.geometry} material={materials.white} />
                 <mesh geometry={nodes.coin220_1.geometry} material={materials['white.027']} />
                 <mesh geometry={nodes.coin220_2.geometry} material={materials['blue.015']} />
