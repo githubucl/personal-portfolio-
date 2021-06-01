@@ -73,7 +73,7 @@ I leveraged my undergraduate First Class Honor degree into <span>London School o
       <div className="dot">
         <h1>WHY?</h1>
         <br /><br />
-        <span>But what do all of these have to do with Front-End development</span>
+        But what do all of these have to do with Front-End development
       </div>
     </div>
     <div style={{ height: "100vh" }}>

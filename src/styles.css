@@ -78,7 +78,7 @@ body {
   max-width: 600px;
   padding: 0;
   padding: 80px;
-  color: #a0a0a0;
+  color: #878787;
   line-height: 1.6em;
   font-size: 20px;
   letter-spacing: 1.5px;
@@ -107,7 +107,7 @@ font-size: 24px;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px){
   .caption {
     font-size: 3em;
   }
@@ -116,7 +116,8 @@ font-size: 24px;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px),
+only screen and (max-height:920px)   {
   .caption {
     font-size: 2em;
   }
@@ -125,11 +126,15 @@ font-size: 24px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) ,
+only screen and (max-height:850px) {
   .caption {
     font-size: 1em;
   }
+  .dot,.dot>span{
+    font-size: 0.9em;
+  }
   .dot > h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
 }

@@ -89,9 +89,9 @@ export default function Model({ scroll, raycaster, ...props }) {
                 scale={[0.0373, 0.0373, 0.0373]}
             />
             <group
-                position={[26.246, 3.7645, 8.784]}
+                position={[26.2843, 3.7866, 8.7882]}
                 rotation={[1.3527, -0.642, 0.5148]}
-                scale={[0.031, 0.031, 0.031]}
+                scale={[0.0164, 0.0164, 0.0164]}
                 onClick={() => window.open("mailto:" + 'chen15102044370@gmail.com' + '?subject=' + 'Invitation to Interview' + '&body=' + 'Hey Chris!')}
                 onPointerOver={onHover}
                 onPointerOut={unHover}>
@@ -107,9 +107,9 @@ export default function Model({ scroll, raycaster, ...props }) {
                 scale={[0.0736, 0.0736, 0.0736]}
             />
             <group
-                position={[26.2364, 3.8272, 8.7361]}
+                position={[26.2793, 3.8197, 8.7629]}
                 rotation={[1.3527, -0.642, 0.5148]}
-                scale={[0.0194, 0.0194, 0.0194]}>
+                scale={[0.0102, 0.0102, 0.0102]}>
                 <mesh geometry={nodes.Text034.geometry} material={materials['Material.012']} />
                 <mesh geometry={nodes.Text034_1.geometry} material={materials['Material.013']} />
                 <mesh geometry={nodes.Text034_2.geometry} material={materials['Material.011']} />
