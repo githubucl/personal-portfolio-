@@ -30,7 +30,7 @@ export default function Model({ scroll, raycaster, ...props }) {
     }
     useFrame((state) => {
         t.current = THREE.MathUtils.lerp(t.current, actions["CameraAction.018"]._clip.duration * scroll.current, 0.05)
-        if (t.current === 19.83) {
+        if (t.current >= 19.83) {
             mixer.setTime(19.83)
         } else {
             mixer.setTime(t.current)
