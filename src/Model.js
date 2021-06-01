@@ -18,6 +18,7 @@ export default function Model({ scroll, raycaster, ...props }) {
     }, [hovered])
     useEffect(() => {
         void actions["CameraAction.018"].play()
+        actions.clampWhenFinished = true;
     }, [])
     const onHover = (e) => {
         e.stopPropagation()
