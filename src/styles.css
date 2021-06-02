@@ -4,7 +4,9 @@
   box-sizing: border-box;
   list-style: none;
 }
-
+a{
+  text-decoration: none;
+}
 html,
 body,
 #root,
@@ -56,19 +58,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.caption {
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin: 80px;
-  color: white;
-  font-size: 8em;
-  font-weight: 100;
-  line-height: 1em;
-  font-variant-numeric: tabular-nums;
-  -webkit-font-smoothing: auto;
-}
+
 
 .dot {
   pointer-events: none;
@@ -78,17 +68,17 @@ body {
   max-width: 600px;
   padding: 0;
   padding: 80px;
-  color: #e4e4e4;
+  color: #d8d7d7;
   line-height: 1.6em;
   font-size: 20px;
   letter-spacing: 1.5px;
 }
-.gold{
+/* .gold{
   color: white;
-}
+} */
 .dot > h1 {
   -webkit-font-smoothing: auto;
-  pointer-events: none;
+  /* pointer-events: none; */
   color: white;
   font-size: 5em;
   font-weight: 100;
@@ -98,9 +88,29 @@ body {
 }
 
 .dot > span {
-font-weight: 600;
+font-weight: 400;
 color: white;
 font-size: 24px;
+}
+.contact{
+  cursor: pointer;
+  pointer-events:auto;
+  color: white;
+  display: inline-block;
+  border: solid 1px white;
+  padding: 15px;
+
+  
+}
+.dot >.why {
+/* display: inline-block; */
+  /* color:#afe642; */
+  margin-top: -1em;
+  font-weight: 100;
+
+}
+.why > .grey{
+  color: #ced8df;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -110,9 +120,7 @@ font-size: 24px;
 }
 
 @media only screen and (max-width: 800px){
-  .caption {
-    font-size: 3em;
-  }
+  
   .dot > h1 {
     font-size: 3em;
   }
@@ -120,9 +128,7 @@ font-size: 24px;
 
 @media only screen and (max-width: 700px),
 only screen and (max-height:920px)   {
-  .caption {
-    font-size: 2em;
-  }
+ 
   .dot > h1 {
     font-size: 3em;
   }
@@ -130,13 +136,16 @@ only screen and (max-height:920px)   {
 
 @media only screen and (max-width: 600px) ,
 only screen and (max-height:850px) {
-  .caption {
-    font-size: 1em;
-  }
+  
   .dot,.dot>span{
     font-size: 0.9em;
   }
   .dot > h1 {
     font-size: 2em;
   }
+  .dot >.why {
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: -200px;
+    }
 }

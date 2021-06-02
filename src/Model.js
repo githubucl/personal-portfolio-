@@ -15,6 +15,14 @@ export default function Model({ scroll, raycaster, ...props }) {
     useEffect(() => {
         // if (hovered) group.current.getObjectByName(hovered).material.color.set("white")
         document.body.style.cursor = hovered ? "pointer" : "auto"
+        if (hovered) {
+            group.current.getObjectByName('button').children[1].material.color.set('white')
+        }
+        else {
+            group.current.getObjectByName('button').children[1].material.color.set('#8BB8C2')
+        }
+
+
     }, [hovered])
     useEffect(() => {
         void actions["CameraAction.018"].play()
@@ -29,6 +37,11 @@ export default function Model({ scroll, raycaster, ...props }) {
         setHovered(null)
     }
     useFrame((state) => {
+        const et = state.clock.elapsedTime
+
+        group.current.children[4].scale.x = (0.1 * Math.sin(et) + 1) / 80
+        group.current.children[4].scale.z = (0.1 * Math.sin(et) + 1) / 80
+
         t.current = THREE.MathUtils.lerp(t.current, actions["CameraAction.018"]._clip.duration * scroll.current, 0.05)
         if (t.current >= 20.958) {
             mixer.setTime(20.958)
@@ -43,11 +56,12 @@ export default function Model({ scroll, raycaster, ...props }) {
 
         group.current.children[0].children.forEach((child, index) => {
             // child.material.color.lerp(color.set(hovered === child.name ? "tomato" : "#202020").convertSRGBToLinear(), hovered ? 0.1 : 0.05)
-            const et = state.clock.elapsedTime
+
             // child.position.y = Math.sin((et + index * 2000) / 2) / 10
             child.rotation.x = Math.sin((et + index * 2000) / 3) / 100
             child.rotation.y = Math.cos((et + index * 2000) / 2) / 100
             child.rotation.z = Math.sin((et + index * 2000) / 3) / 100
+            // console.log(child);
 
 
         })
@@ -56,8 +70,8 @@ export default function Model({ scroll, raycaster, ...props }) {
         <group ref={group} {...props} dispose={null}>
             <group
                 name="Camera"
-                position={[-34.7716, 5.5781, 19.0726]}
-                rotation={[1.5512, -0.0335, -0.0746]}>
+                position={[-32.0827, 24.7164, 17.138]}
+                rotation={[1.5291, -0.0689, 0.4423]}>
                 <group
                     name="Camera_Orientation"
                     position={[0, 1.1153, 0]}
@@ -83,26 +97,42 @@ export default function Model({ scroll, raycaster, ...props }) {
             </group>
             <group
                 name="drug"
-                position={[0.8278, 2.946, 9.2494]}
+                position={[-7.2836, 2.946, 9.2494]}
                 rotation={[-1.8758, 0.0508, -0.1994]}
                 scale={[-0.489, 0.246, -0.489]}>
                 <mesh geometry={nodes.coin220.geometry} material={materials.white} />
                 <mesh geometry={nodes.coin220_1.geometry} material={materials['white.027']} />
                 <mesh geometry={nodes.coin220_2.geometry} material={materials['blue.015']} />
+                <mesh geometry={nodes.coin220_3.geometry} material={materials['Material.007']} />
             </group>
-            <mesh
-                name="basketball"
-                geometry={nodes.basketball.geometry}
-                material={materials['Default OBJ.001']}
-                position={[-34.4905, 2.3931, 11.2462]}
-                rotation={[Math.PI / 2, 0, 0]}
-                scale={[0.0373, 0.0373, 0.0373]}
-            />
             <group
-                position={[26.2843, 3.7866, 8.7882]}
+                name="basketball"
+                position={[-28.5501, 21.0682, 11.2462]}
+                rotation={[Math.PI / 2, 0, 0]}
+                scale={[0.0373, 0.0373, 0.0373]}>
+                <mesh
+                    geometry={nodes.lowpolyPeopleSportsMan05.geometry}
+                    material={materials['Default OBJ.001']}
+                />
+                <mesh
+                    geometry={nodes.lowpolyPeopleSportsMan05_1.geometry}
+                    material={materials['Material.001']}
+                />
+                <mesh
+                    geometry={nodes.lowpolyPeopleSportsMan05_2.geometry}
+                    material={materials['Material.003']}
+                />
+                <mesh
+                    geometry={nodes.lowpolyPeopleSportsMan05_3.geometry}
+                    material={materials['Material.005']}
+                />
+            </group>
+            <group
+                name="button"
+                position={[26.3158, 3.7881, 8.8025]}
                 rotation={[1.3527, -0.642, 0.5148]}
-                scale={[0.0164, 0.0164, 0.0164]}
-                onClick={() => window.open("mailto:" + 'chen15102044370@gmail.com' + '?subject=' + 'Invitation to Interview' + '&body=' + 'Hey Chris!')}
+                scale={[0.0155, 0.0155, 0.0155]}
+                onClick={() => window.open("mailto:" + 'chrischen@mail.com' + '?subject=' + `Let's come out for a cup of coffee!` + '&body=' + 'Hey Chris!')}
                 onPointerOver={onHover}
                 onPointerOut={unHover}>
                 <mesh geometry={nodes.Text002.geometry} material={materials['Material.004']} />
@@ -117,9 +147,10 @@ export default function Model({ scroll, raycaster, ...props }) {
                 scale={[0.0736, 0.0736, 0.0736]}
             />
             <group
-                position={[26.2793, 3.8197, 8.7629]}
+                position={[26.3063, 3.8337, 8.7666]}
                 rotation={[1.3527, -0.642, 0.5148]}
-                scale={[0.0102, 0.0102, 0.0102]}>
+
+                scale={[0.008, 0.008, 0.008]}>
                 <mesh geometry={nodes.Text034.geometry} material={materials['Material.012']} />
                 <mesh geometry={nodes.Text034_1.geometry} material={materials['Material.013']} />
                 <mesh geometry={nodes.Text034_2.geometry} material={materials['Material.011']} />
