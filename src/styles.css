@@ -110,7 +110,8 @@ font-size: 24px;
 
 }
 .why > .grey{
-  color: #ced8df;
+  color: #d7f942;
+  font-weight: 1000;
 }
 
 @media only screen and (max-width: 1000px) {
