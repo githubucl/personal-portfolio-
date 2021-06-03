@@ -70,8 +70,8 @@ export default function Model({ scroll, raycaster, ...props }) {
         <group ref={group} {...props} dispose={null}>
             <group
                 name="Camera"
-                position={[-32.0827, 24.7164, 17.138]}
-                rotation={[1.5291, -0.0689, 0.4423]}>
+                position={[-29.6056, 23.9947, 18.1117]}
+                rotation={[1.4982, -0.0364, -0.0843]}>
                 <group
                     name="Camera_Orientation"
                     position={[0, 1.1153, 0]}
@@ -91,8 +91,8 @@ export default function Model({ scroll, raycaster, ...props }) {
                 rotation={[Math.PI / 2, 0, 0]}
                 scale={[0.0639, 0.0639, 0.0639]}>
                 <group name="Statue" position={[1.5167, 1.7089, 118.0964]} scale={[0.5566, 0.5566, 0.5566]}>
-                    <mesh geometry={nodes.Mesh188.geometry} material={materials['Mat.5']} />
-                    <mesh geometry={nodes.Mesh188_1.geometry} material={materials['Mat.3']} />
+                    <mesh geometry={nodes.Mesh002.geometry} material={materials['Mat.004']} />
+                    <mesh geometry={nodes.Mesh002_1.geometry} material={materials['Mat.006']} />
                 </group>
             </group>
             <group
@@ -100,10 +100,10 @@ export default function Model({ scroll, raycaster, ...props }) {
                 position={[-7.2836, 2.946, 9.2494]}
                 rotation={[-1.8758, 0.0508, -0.1994]}
                 scale={[-0.489, 0.246, -0.489]}>
-                <mesh geometry={nodes.coin220.geometry} material={materials.white} />
-                <mesh geometry={nodes.coin220_1.geometry} material={materials['white.027']} />
-                <mesh geometry={nodes.coin220_2.geometry} material={materials['blue.015']} />
-                <mesh geometry={nodes.coin220_3.geometry} material={materials['Material.007']} />
+                <mesh geometry={nodes.coin003.geometry} material={materials['white.005']} />
+                <mesh geometry={nodes.coin003_1.geometry} material={materials['white.006']} />
+                <mesh geometry={nodes.coin003_2.geometry} material={materials['blue.002']} />
+                <mesh geometry={nodes.coin003_3.geometry} material={materials['Material.025']} />
             </group>
             <group
                 name="basketball"
@@ -111,37 +111,37 @@ export default function Model({ scroll, raycaster, ...props }) {
                 rotation={[Math.PI / 2, 0, 0]}
                 scale={[0.0373, 0.0373, 0.0373]}>
                 <mesh
-                    geometry={nodes.lowpolyPeopleSportsMan05.geometry}
-                    material={materials['Default OBJ.001']}
+                    geometry={nodes.lowpolyPeopleSportsMan05002.geometry}
+                    material={materials['Default OBJ.003']}
                 />
                 <mesh
-                    geometry={nodes.lowpolyPeopleSportsMan05_1.geometry}
-                    material={materials['Material.001']}
+                    geometry={nodes.lowpolyPeopleSportsMan05002_1.geometry}
+                    material={materials['Material.026']}
                 />
                 <mesh
-                    geometry={nodes.lowpolyPeopleSportsMan05_2.geometry}
-                    material={materials['Material.003']}
+                    geometry={nodes.lowpolyPeopleSportsMan05002_2.geometry}
+                    material={materials['Material.027']}
                 />
                 <mesh
-                    geometry={nodes.lowpolyPeopleSportsMan05_3.geometry}
-                    material={materials['Material.005']}
+                    geometry={nodes.lowpolyPeopleSportsMan05002_3.geometry}
+                    material={materials['Material.028']}
                 />
             </group>
             <group
                 name="button"
-                position={[26.3158, 3.7881, 8.8025]}
-                rotation={[1.3527, -0.642, 0.5148]}
-                scale={[0.0155, 0.0155, 0.0155]}
                 onClick={() => window.open("mailto:" + 'chrischen@mail.com' + '?subject=' + `Let's come out for a cup of coffee!` + '&body=' + 'Hey Chris!')}
                 onPointerOver={onHover}
-                onPointerOut={unHover}>
-                <mesh geometry={nodes.Text002.geometry} material={materials['Material.004']} />
-                <mesh geometry={nodes.Text002_1.geometry} material={materials['Material.006']} />
+                onPointerOut={unHover}
+                position={[26.3158, 3.7881, 8.8025]}
+                rotation={[1.3527, -0.642, 0.5148]}
+                scale={[0.0155, 0.0155, 0.0155]}>
+                <mesh geometry={nodes.Text004.geometry} material={materials['Material.030']} />
+                <mesh geometry={nodes.Text004_1.geometry} material={materials['Material.031']} />
             </group>
             <mesh
                 name="Text"
                 geometry={nodes.Text.geometry}
-                material={materials['Material.002']}
+                material={materials['Material.029']}
                 position={[26.055, 3.9351, 8.91]}
                 rotation={[1.5404, -0.5187, 0.6869]}
                 scale={[0.0736, 0.0736, 0.0736]}
@@ -149,24 +149,23 @@ export default function Model({ scroll, raycaster, ...props }) {
             <group
                 position={[26.3063, 3.8337, 8.7666]}
                 rotation={[1.3527, -0.642, 0.5148]}
-
                 scale={[0.008, 0.008, 0.008]}>
-                <mesh geometry={nodes.Text034.geometry} material={materials['Material.012']} />
-                <mesh geometry={nodes.Text034_1.geometry} material={materials['Material.013']} />
-                <mesh geometry={nodes.Text034_2.geometry} material={materials['Material.011']} />
-                <mesh geometry={nodes.Text034_3.geometry} material={materials['Material.014']} />
-                <mesh geometry={nodes.Text034_4.geometry} material={materials['Material.008']} />
-                <mesh geometry={nodes.Text034_5.geometry} material={materials['Material.010']} />
-                <mesh geometry={nodes.Text034_6.geometry} material={materials['Material.009']} />
+                <mesh geometry={nodes.Text005.geometry} material={materials['Material.032']} />
+                <mesh geometry={nodes.Text005_1.geometry} material={materials['Material.033']} />
+                <mesh geometry={nodes.Text005_2.geometry} material={materials['Material.034']} />
+                <mesh geometry={nodes.Text005_3.geometry} material={materials['Material.035']} />
+                <mesh geometry={nodes.Text005_4.geometry} material={materials['Material.036']} />
+                <mesh geometry={nodes.Text005_5.geometry} material={materials['Material.037']} />
+                <mesh geometry={nodes.Text005_6.geometry} material={materials['Material.038']} />
             </group>
             <group
                 position={[8.0889, 2.6516, 8.4098]}
                 rotation={[-1.8758, 0.0508, -0.1994]}
                 scale={[-0.6485, 0.3262, -0.6485]}>
-                <mesh geometry={nodes.coin1745.geometry} material={materials['gold.001']} />
-                <mesh geometry={nodes.coin1745_1.geometry} material={materials.green} />
-                <mesh geometry={nodes.coin1745_2.geometry} material={materials.green_dark} />
-                <mesh geometry={nodes.coin1745_3.geometry} material={materials['white.001']} />
+                <mesh geometry={nodes.coin004.geometry} material={materials['gold.003']} />
+                <mesh geometry={nodes.coin004_1.geometry} material={materials['green.002']} />
+                <mesh geometry={nodes.coin004_2.geometry} material={materials['green_dark.002']} />
+                <mesh geometry={nodes.coin004_3.geometry} material={materials['white.007']} />
             </group>
         </group>
     )
