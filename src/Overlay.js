@@ -71,7 +71,7 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => {
         It did not take me long to make the decision because I did not want to waste the opportunity to see the other side of the world and most importantly, the name sounded much less 'bloody'
       </div>
       </div>
-      <div style={{ height: "200vh" }}>
+      <div style={{ height: "250vh" }}>
         <div className="dot gold">
           <h1>Private Equity</h1>
           <br /><br />
@@ -87,11 +87,32 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => {
 I leveraged my undergraduate First Class Honor degree into <span>London School of Economics and Political Science (LSE) & Yale University MBA program</span>
         </div>
       </div>
-      <div style={{ height: "200vh" }}>
+      <div style={{ height: "250vh" }}>
         <div className="dot ">
-          <h1 className="why"><p >BUT</p><p className='grey'>What do</p> <p className='grey'>All of </p><p className='grey'>These </p><p className='grey'>Have to</p> <p className='grey'>Do with</p> </h1>
-          <br /><br />
-
+          <h1 className="why">
+            BUT
+          </h1>
+        </div>
+      </div>
+      <div style={{ height: "250vh" }}>
+        <div className="dot ">
+          <h1 className="why">
+            WHAT DO
+          </h1>
+        </div>
+      </div>
+      <div style={{ height: "250vh" }}>
+        <div className="dot ">
+          <h1 className="why">
+            ALL OF THESE
+          </h1>
+        </div>
+      </div>
+      <div style={{ height: "250vh" }}>
+        <div className="dot ">
+          <h1 className="why">
+            HAVE TO DO WITH THE
+          </h1>
         </div>
       </div>
       <div style={{ height: "100vh" }}>

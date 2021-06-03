@@ -43,7 +43,7 @@ export default function Model({ scroll, raycaster, ...props }) {
         group.current.children[4].scale.z = (0.1 * Math.sin(et) + 1) / 80
 
         t.current = THREE.MathUtils.lerp(t.current, actions["CameraAction.018"]._clip.duration * scroll.current, 0.05)
-        if (t.current >= 20.958) {
+        if (t.current >= 50) {
             mixer.setTime(20.958)
         }
         else if (t.current <= 0) {

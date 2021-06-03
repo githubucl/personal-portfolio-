@@ -78,7 +78,7 @@ body {
 } */
 .dot > h1 {
   -webkit-font-smoothing: auto;
-  /* pointer-events: none; */
+  pointer-events: none;
   color: white;
   font-size: 5em;
   font-weight: 100;
@@ -103,16 +103,11 @@ font-size: 24px;
   
 }
 .dot >.why {
-/* display: inline-block; */
-  /* color:#afe642; */
-  margin-top: -1em;
-  font-weight: 100;
 
-}
-.why > .grey{
   color: #d7f942;
   font-weight: 1000;
 }
+
 
 @media only screen and (max-width: 1000px) {
   .caption {
