@@ -127,11 +127,16 @@ font-size: 24px;
 }
 
 @media only screen and (max-width: 700px),
-only screen and (max-height:920px)   {
+only screen and (max-height:966px)   {
  
   .dot > h1 {
     font-size: 3em;
   }
+  .dot >.why {
+    font-size: 3em;
+    font-weight: 800;
+    /* margin-top: -200px; */
+    }
 }
 
 @media only screen and (max-width: 600px) ,
@@ -146,6 +151,6 @@ only screen and (max-height:850px) {
   .dot >.why {
     font-size: 3em;
     font-weight: 800;
-    margin-top: -200px;
+    /* margin-top: -200px; */
     }
 }
