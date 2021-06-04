@@ -1,9 +1,19 @@
-import React, { forwardRef, useState } from "react"
+import React, { forwardRef, useState, useEffect, useRef } from "react"
 
 const Overlay = forwardRef(({ caption, scroll }, ref) => {
 
   const [text, setText] = useState('E-mail Me')
   const [copy, setCopy] = useState(false)
+  const scrollBut = useRef()
+  useEffect(() => {
+    if (scrollBut) {
+      scrollBut.current.style.left = `${window.innerWidth / 2}px`
+      scrollBut.current.style.bottom = `${-200}px`
+      setTimeout(() => {
+        scrollBut.current.style.display = 'none'
+      }, 3900);
+    }
+  }, [window.innerWidth, window.innerHeight])
   return (
     <div
       ref={ref}
@@ -45,7 +55,10 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => {
             Resume
           </a> */}
           </span>
+          <section id="section05" ref={scrollBut}>
 
+
+          </section>
 
         </div>
       </div>
@@ -56,7 +69,7 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => {
        Being a boy in an asian household, becoming a doctor seemed like one of the few career paths that doesn't lead to parents' "disappointment"
        <br /><br />
 
-       I worked hard and got really good grades in my IB exams and got into Med school at <span>University of Melbourne</span>
+       I worked hard and got really good grades in my IB exams and got into med school at <span>University of Melbourne</span>
           <br /><br />
        However, it did not take too many lab rats to make me realised that being a doctor might not be an option for me due to my hemophobia
       </div>
@@ -90,21 +103,15 @@ I leveraged my undergraduate First Class Honor degree into <span>London School o
       <div style={{ height: "250vh" }}>
         <div className="dot ">
           <h1 className="why">
-            BUT
+            BUT WHY
           </h1>
         </div>
       </div>
+
       <div style={{ height: "250vh" }}>
         <div className="dot ">
           <h1 className="why">
-            WHAT DO
-          </h1>
-        </div>
-      </div>
-      <div style={{ height: "250vh" }}>
-        <div className="dot ">
-          <h1 className="why">
-            ALL OF THESE
+            DO ALL OF THESE
           </h1>
         </div>
       </div>
@@ -112,6 +119,13 @@ I leveraged my undergraduate First Class Honor degree into <span>London School o
         <div className="dot ">
           <h1 className="why">
             HAVE TO DO WITH THE
+          </h1>
+        </div>
+      </div>
+      <div style={{ height: "250vh" }}>
+        <div className="dot ">
+          <h1 className="why">
+
           </h1>
         </div>
       </div>
