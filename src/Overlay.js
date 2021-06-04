@@ -9,9 +9,7 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => {
     if (scrollBut) {
       scrollBut.current.style.left = `${window.innerWidth / 2}px`
       scrollBut.current.style.bottom = `${-200}px`
-      setTimeout(() => {
-        scrollBut.current.style.display = 'none'
-      }, 3900);
+
     }
   }, [window.innerWidth, window.innerHeight])
   return (

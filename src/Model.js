@@ -21,6 +21,9 @@ export default function Model({ scroll, raycaster, ...props }) {
         else {
             group.current.getObjectByName('button').children[1].material.color.set('#8BB8C2')
         }
+        setTimeout(() => {
+            document.querySelector('#section05').style.display = 'none'
+        }, 3900);
 
 
     }, [hovered])
