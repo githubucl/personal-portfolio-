@@ -187,9 +187,9 @@ only screen and (max-height:850px) {
   .dot,.dot>span{
     font-size: 20px;
   }
-  .dot > h1 {
+  /* .dot > h1 {
     font-size: 2em;
-  }
+  } */
   .dot >.why {
     font-size: 3em;
     font-weight: 800;
@@ -202,9 +202,9 @@ only screen and (max-height:752px) {
   .dot,.dot>span{
     font-size: 12px;
   }
-  .dot > h1 {
+  /* .dot > h1 {
     font-size: 17px;
-  }
+  } */
   .dot >.why {
     font-size: 3em;
     font-weight: 800;
