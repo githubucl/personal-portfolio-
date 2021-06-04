@@ -181,8 +181,11 @@ only screen and (max-height:966px)   {
 @media only screen and (max-width: 600px) ,
 only screen and (max-height:850px) {
   
+  .dot{
+    font-size: 17px;
+  }
   .dot,.dot>span{
-    font-size: 0.9em;
+    font-size: 20px;
   }
   .dot > h1 {
     font-size: 2em;
@@ -197,10 +200,10 @@ only screen and (max-height:850px) {
 only screen and (max-height:752px) {
   
   .dot,.dot>span{
-    font-size: 0.75em;
+    font-size: 12px;
   }
   .dot > h1 {
-    font-size: 2em;
+    font-size: 17px;
   }
   .dot >.why {
     font-size: 3em;
