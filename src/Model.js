@@ -71,10 +71,7 @@ export default function Model({ scroll, raycaster, ...props }) {
     })
     return (
         <group ref={group} {...props} dispose={null}>
-            <group
-                name="Camera"
-                position={[-29.6056, 23.9947, 18.1117]}
-                rotation={[1.4982, -0.0364, -0.0843]}>
+            <group name="Camera" position={[26.6486, 3.3578, 8.1735]} rotation={[1.284, -0.6609, 0.5121]}>
                 <group
                     name="Camera_Orientation"
                     position={[0, 1.1153, 0]}
@@ -135,31 +132,29 @@ export default function Model({ scroll, raycaster, ...props }) {
                 onClick={() => window.open("mailto:" + 'chrischen@mail.com' + '?subject=' + `Let's come out for a cup of coffee!` + '&body=' + 'Hey Chris!')}
                 onPointerOver={onHover}
                 onPointerOut={unHover}
-                position={[26.3158, 3.7881, 8.8025]}
+                position={[26.305, 3.7755, 8.8062]}
                 rotation={[1.3527, -0.642, 0.5148]}
                 scale={[0.0155, 0.0155, 0.0155]}>
                 <mesh geometry={nodes.Text004.geometry} material={materials['Material.030']} />
                 <mesh geometry={nodes.Text004_1.geometry} material={materials['Material.031']} />
             </group>
             <mesh
-                name="Text"
-                geometry={nodes.Text.geometry}
+                geometry={nodes.world_of_frontend.geometry}
                 material={materials['Material.029']}
                 position={[26.055, 3.9351, 8.91]}
                 rotation={[1.5404, -0.5187, 0.6869]}
                 scale={[0.0736, 0.0736, 0.0736]}
             />
             <group
-                position={[26.3063, 3.8337, 8.7666]}
-                rotation={[1.3527, -0.642, 0.5148]}
-                scale={[0.008, 0.008, 0.008]}>
-                <mesh geometry={nodes.Text005.geometry} material={materials['Material.032']} />
-                <mesh geometry={nodes.Text005_1.geometry} material={materials['Material.033']} />
-                <mesh geometry={nodes.Text005_2.geometry} material={materials['Material.034']} />
-                <mesh geometry={nodes.Text005_3.geometry} material={materials['Material.035']} />
-                <mesh geometry={nodes.Text005_4.geometry} material={materials['Material.036']} />
-                <mesh geometry={nodes.Text005_5.geometry} material={materials['Material.037']} />
-                <mesh geometry={nodes.Text005_6.geometry} material={materials['Material.038']} />
+                position={[26.3004, 3.836, 8.7593]}
+                rotation={[1.3527, -0.6421, 0.5139]}
+                scale={[0.0091, 0.0091, 0.0091]}>
+                <mesh name="Text" geometry={nodes.Text.geometry} material={materials['Material.032']} />
+                <mesh geometry={nodes.Text_1.geometry} material={materials['Material.034']} />
+                <mesh geometry={nodes.Text_2.geometry} material={materials['Material.035']} />
+                <mesh geometry={nodes.Text_3.geometry} material={materials['Material.036']} />
+                <mesh geometry={nodes.Text_4.geometry} material={materials['Material.037']} />
+                <mesh geometry={nodes.Text_5.geometry} material={materials['Material.038']} />
             </group>
             <group
                 position={[8.0889, 2.6516, 8.4098]}
@@ -175,3 +170,4 @@ export default function Model({ scroll, raycaster, ...props }) {
 }
 
 useGLTF.preload('/map.glb')
+
