@@ -9,9 +9,7 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => {
     if (scrollBut) {
       scrollBut.current.style.left = `${window.innerWidth / 2}px`
       scrollBut.current.style.marginbottom = `${180}px`
-      console.log(scrollBut.current.style);
-      // console.log(scrollBut.current.style.left);
-      console.log(window.innerHeight);
+
     }
   }, [window.innerWidth, window.innerHeight])
   return (
