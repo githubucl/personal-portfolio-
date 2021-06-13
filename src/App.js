@@ -15,6 +15,7 @@ export default function App() {
   return (
     <>
       <Canvas
+        pixelRatio={Math.min(3, window.devicePixelRatio)}
         shadows
         onCreated={(state) => state.events.connect(overlay.current)}>
         <ambientLight intensity={0.4} />
