@@ -17,7 +17,7 @@ export default function App() {
     <>
       <Canvas
 
-        pixelRatio={isMobile ? Math.min(3, window.devicePixelRatio) : window.devicePixelRatio}
+        pixelRatio={[1, 2]}
         shadows
         onCreated={(state) => state.events.connect(overlay.current)}>
         <ambientLight intensity={0.4} />
@@ -28,7 +28,13 @@ export default function App() {
           <Environment preset="city" />
         </Suspense>
       </Canvas>
-      <Loader />
+      <Loader
+
+        dataInterpolation={(p) => {
+          return `Loading ${p.toFixed(2)}% `
+        }}
+
+      />
       <Overlay ref={overlay} caption={caption} scroll={scroll} />
     </>
   )
