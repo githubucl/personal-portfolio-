@@ -120,7 +120,7 @@ I leveraged my undergraduate First Class Honor degree into <span>London School o
           </h1>
         </div>
       </div>
-      <div style={{ height: "250vh" }}>
+      <div style={{ height: "9vh" }}>
         <div className="dot ">
           <h1 className="why">
 
