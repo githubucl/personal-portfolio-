@@ -31,7 +31,7 @@ export default function App() {
       <Loader
 
         dataInterpolation={(p) => {
-          return `Loading ${p.toFixed(2)}% `
+          return `Loading ${p.toFixed(2)}% View better on PC`
         }}
 
       />
