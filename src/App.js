@@ -31,7 +31,7 @@ export default function App() {
       <Loader
 
         dataInterpolation={(p) => {
-          return `Loading ${p.toFixed(2)}% ${isMobile ? 'View better on PC' : ''}`
+          return ` ${isMobile ? 'Better experience on PC' : `Loading ${p.toFixed(2)}%`}`
         }}
 
       />
