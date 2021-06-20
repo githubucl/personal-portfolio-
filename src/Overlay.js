@@ -32,7 +32,7 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => {
             <li>JavaScript (ES6+)</li>
             <li>React + Redux</li>
             <li>Three.js</li>
-            <li>React-three-fiber</li>
+            <li>AWS</li>
             <li>Blender</li>
           </ul>
           <br />
