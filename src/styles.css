@@ -205,6 +205,10 @@ only screen and (max-height:880px) {
   /* .dot > h1 {
     font-size: 17px;
   } */
+  li:before {
+
+    line-height: 19px;
+  }
   .dot >.why {
     font-size: 3em;
     font-weight: 800;
