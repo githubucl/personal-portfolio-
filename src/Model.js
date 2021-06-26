@@ -47,8 +47,8 @@ export default function Model({ scroll, raycaster, ...props }) {
 
         t.current = THREE.MathUtils.lerp(t.current, actions["CameraAction.018"]._clip.duration * scroll.current, 0.05)
         // console.log(t.current);
-        if (t.current >= 33.333) {
-            mixer.setTime(33.333)
+        if (t.current >= 27.08333) {
+            mixer.setTime(27.08333)
         }
         else if (t.current <= 0) {
             mixer.setTime(0)
