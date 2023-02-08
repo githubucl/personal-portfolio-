@@ -77,8 +77,8 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => {
             <h1>Biochemical Engineering</h1>
             <br />
             <br />
-            As I stood at a crossroads, an unexpected opportunity presented itself from across the globe - an offer to study Biochemical Engineering at the prestigious
-            <span> University College London (UCL)</span>. The thought of exploring a new continent and experiencing a different culture was irresistible.
+            As I stood at a crossroads, an unexpected opportunity presented itself from across the globe - an offer to study Biochemical Engineering at
+            <span> University College London (UCL)</span>.
             <br />
             <br />
             The decision was a no-brainer for me. Not only did the field of Biochemical Engineering seemed to strike a perfect balance between my parents' expectations and my
